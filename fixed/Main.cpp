@@ -99,7 +99,7 @@ void SlowRec(double wt, double ct, int x1, int y1)
 		driverInitialized = InitializeMouseDriver();
 		if (!driverInitialized)
 		{
-			std::cerr << "Driver not initialized, falling back to mouse_event" << std::endl;
+			std::cerr << "driver not initialized" << std::endl;
 		}
 	}
 
@@ -494,4 +494,5 @@ LRESULT WINAPI WndProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
 		break;
 	}
 	return ::DefWindowProc(hWnd, msg, wParam, lParam);
+
 }
